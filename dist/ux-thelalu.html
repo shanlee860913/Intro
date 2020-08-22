@@ -115,56 +115,45 @@
       </div>
     </div>
     <main class="cs-page-wrapper">
-      <!-- Sign In Modal-->
-      <div class="modal fade" id="modal-signin" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content border-0">
-            <div class="cs-view" id="modal-signup-view">
-              <div class="modal-header border-0 bg-dark px-4">
-                <h4 class="modal-title text-light">home</h4>
-                <button class="close text-light" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              </div>
-             <!--需插入index連結-->> 
-            </div>
-            
-          </div>
-        </div>
-      </div>
+      
       <!-- Navbar (Floating dark)-->
       <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
-      
-                
       <header class="cs-header navbar navbar-expand-lg navbar-light navbar-floating navbar-sticky" data-scroll-header>
         <div class="container px-0 px-xl-3">
+          <button class="navbar-toggler ml-n2 mr-2" type="button" data-toggle="offcanvas" data-offcanvas-id="primaryMenu"><span class="navbar-toggler-icon"></span></button>
+          <a class="navbar-brand order-lg-1 mx-auto ml-lg-0 pr-lg-2 mr-lg-4" href="index.html">
+            <img class="d-none d-lg-block" width="100" src="img/content/Shan's portfolio (1).gif" alt="Around"/></a>
+
           <div class="d-flex align-items-center order-lg-3 ml-lg-auto"><a class="btn btn-primary ml-grid-gutter d-none d-lg-inline-block" href="index.html" data-toggle="modal" data-view="#modal-signup-view">Home</a></div>
           <div class="cs-offcanvas-collapse order-lg-2" id="primaryMenu">
             <div class="cs-offcanvas-body">
+              <ul class="navbar-nav">
               <!-- DA-->
               <ul class="navbar-nav">
                 <li class="nav-item dropdown dropdown-mega"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Data Science</a>
                   <div class="dropdown-menu"><a class="dropdown-column dropdown-column-img bg-secondary" href="#" style="background-image: url(./img/content/dsbanner.png);"></a>
-                    <div class="dropdown-column"><a class="dropdown-item" href="#">真假新聞辨識系統專題</a><a class="dropdown-item" href="demo-mobile-app.html">深圳證交所實習</a><a class="dropdown-item" href="demo-coworking-space.html">醫療區塊鏈黑客松</a><a class="dropdown-item" href="demo-coworking-space.html">華南金融科技創意競賽</a><a class="dropdown-item" href="demo-event-landing.html">法律科技黑客松</a></div>
+                    <div class="dropdown-column"><a class="dropdown-item" href="project-news.html">真假新聞辨識系統專題</a><a class="dropdown-item" href="internship-stock.html">深圳證交所實習</a><a class="dropdown-item" href="index.html#gallery-1">醫療區塊鏈黑客松</a><a class="dropdown-item" href="index.html#gallery-2">華南金融科技創意競賽</a><a class="dropdown-item" href="index.html#gallery-3">法律科技黑客松</a></div>
                   </div>
                 </li>
               <!-- SM-->
               <ul class="navbar-nav">
                 <li class="nav-item dropdown dropdown-mega"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Social Media</a>
                   <div class="dropdown-menu"><a class="dropdown-column dropdown-column-img bg-secondary" href="#" style="background-image: url(img/content/smbanner.png);"></a>
-                    <div class="dropdown-column"><a class="dropdown-item" href="#">UX與業界合作實作</a><a class="dropdown-item" href="demo-mobile-app.html">聊天機器人實作</a><a class="dropdown-item" href="demo-coworking-space.html">Arduino實作</a><a class="dropdown-item" href="demo-event-landing.html">專案管理業界實習</a><a class="dropdown-item" href="demo-coworking-space.html">社團活動參與</a><a class="dropdown-item" href="demo-coworking-space.html">LINE貼圖製作</a></div>
+                    <div class="dropdown-column"><a class="dropdown-item" href="ux-thelalu.html">UX與業界合作實作</a><a class="dropdown-item" href="index.html#gallery-4">聊天機器人實作</a><a class="dropdown-item" href="index.html#gallery-5">Arduino實作</a><a class="dropdown-item" href="index.html#gallery-6">專案管理業界實習</a><a class="dropdown-item" href="index.html#gallery-7">社團活動參與</a><a class="dropdown-item" href="index.html#gallery-8">LINE貼圖製作</a></div>
                   </div>
                 </li>
               <!-- PJ-->
               <ul class="navbar-nav">
                 <li class="nav-item dropdown dropdown-mega"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Project</a>
                   <div class="dropdown-menu"></a>
-                    <div class="dropdown-column"><a class="dropdown-item" href="#">真假新聞辨識系統專題</a></div>
+                    <div class="dropdown-column"><a class="dropdown-item" href="project-news.html">真假新聞辨識系統專題</a></div>
                   </div>
                 </li>
               <!-- CF-->
               <ul class="navbar-nav">
                 <li class="nav-item dropdown dropdown-mega"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Certification</a>
                   <div class="dropdown-menu"></a>
-                    <div class="dropdown-column"><a class="dropdown-item" href="#">多益證書</a><a class="dropdown-item" href="demo-mobile-app.html">TBSA證書</a></div>
+                    <div class="dropdown-column"><a class="dropdown-item" href="index.html#gallery-10">多益證書</a><a class="dropdown-item" href="index.html#gallery-11">TBSA證書</a></div>
                   </div>
                 </li>  
             </div>
@@ -186,36 +175,33 @@
       <div class="container">
         <!-- Project gallery (carousel)-->
         <!--XD圖示、構想流程-->
-        <!--<section class="pt-4 mt-lg-2 pb-lg-4">
+        <section class="pt-4 mt-lg-2 pb-lg-4">
           <div class="cs-carousel cs-controls-inside cs-controls-onhover mb-4 mb-lg-0">
             <div class="cs-carousel-inner" data-carousel-options="{&quot;items&quot;: 1, &quot;controls&quot;: true, &quot;nav&quot;: true, &quot;gutter&quot;: 30}">
-              <div><img class="d-block w-100 rounded-lg" src="img/portfolio/single/slider/01.jpg" alt="Project image"/>
-              </div>
-              <div><img class="d-block w-100 rounded-lg" src="img/portfolio/single/slider/02.jpg" alt="Project image"/>
-              </div>
-              <div><img class="d-block w-100 rounded-lg" src="img/portfolio/single/slider/03.jpg" alt="Project image"/>
-              </div>
-              <div><img class="d-block w-100 rounded-lg" src="img/portfolio/single/slider/04.jpg" alt="Project image"/>
-              </div>
-              <div><img class="d-block w-100 rounded-lg" src="img/portfolio/single/slider/05.jpg" alt="Project image"/>
+              <div><img class="d-block w-100 rounded-lg" src="img/content/ux.png" alt="Project image"/>
               </div>
             </div>
           </div>
-        </section><-->
+        </section>
         <!-- Project description-->
         <section class="py-5">
           <div class="row pb-md-2">
             <div class="col-md-5">
               <h3 class="h5">背景介紹</h3>
               <ul class="list-unstyled font-size-md mb-4 pb-2">
-                <li class="mb-2">Name:<span class="font-weight-medium text-nav ml-2">International Company Ltd.</span></li>
-                <li class="mb-2">Services:<span class="font-weight-medium text-nav ml-2">3D Modelling, Product Design</span></li>
-                <li>Website:<a class="nav-link-style ml-2" href="#">https://example.com</a></li>
+                <li class="mb-2">合作專案:<span class="font-weight-medium text-nav ml-2">涵碧樓官方網站Google Analytic資訊處理。</span></li>
+                <li class="mb-2">合作業者:<span class="font-weight-medium text-nav ml-2">涵碧樓The Lula。</span></li>
+                <li class="mb-2">指導教授:<span class="font-weight-medium text-nav ml-2">石佳宜。</span></li>
+                
+                
               </ul>
               <h3 class="h5">合作專案</h3>
-              <p class="font-size-sm mb-4 pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+              <p class="font-size-sm mb-2 pb-0">透過業者涵碧樓所提供之內部Google Anaiytic數據收集，進行使用者經驗分析，近一步擬定行銷策略，並對於網站流程進行優化改善。</p>
+              <p class="font-size-sm mb-0 pb-2">(ㄧ)業主欲了解未來的淺在消費者型態，並能提前部署的走向以及經營方向。</p>
+              <p class="font-size-sm mb-4 pb-2">(二)業主希望從舊網站中，探討網站流程規劃優缺，利日後新網站改善優化。</p>
+
               <h3 class="h5">運用工具</h3>
-              <p class="font-size-sm mb-4 pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+              <p class="font-size-sm mb-4 pb-2">本次使用由Google所提供的...以及運用到Adobe XD作為示意網站流程進行A/B testing。</p>
 
             </div>
             <div class="col-md-7 pt-4 pt-md-0 mb-lg-4 pb-lg-2">
@@ -228,12 +214,16 @@
         </section>
       </div>              
     <!-- Footer-->
-    <footer class="cs-footer bg-dark pt-5 pt-md-6">
+    
+    <footer class="cs-footer bg-dark pt-3 pt-md-3">
       <div class="container pt-3 pt-md-0">
-        <div class="row pb-3">
-          <div class="col-md-4 mt-n2 pb-3 pb-md-0 mb-4"><a class="d-block mb-3" style="width: 153px;"><img src="./img/resume/post.png" alt="Around"/></a>
-            <p class="font-size-sm text-light opacity-60 pb-2 pb-sm-3">東吳大學 巨量資料管理學士學位學程＆科技管理學程</p><a class="social-btn sb-outline sb-facebook sb-light sb-lg mr-2 mb-2" href="#"><i class="fe-facebook"></i></a><a class="social-btn sb-outline sb-twitter sb-light sb-lg mr-2 mb-2" href="#"><i class="fe-twitter"></i></a><a class="social-btn sb-outline sb-instagram sb-light sb-lg mr-2 mb-2" href="#"><i class="fe-instagram"></i></a><a class="social-btn sb-outline sb-google sb-light sb-lg mr-2 mb-2" href="#"><i class="fe-google"></i></a>
+        <div class="row pb-0">
+        
+            <a class="d-block mb-3 pt-3" style="width: 100px;"><img src="./img/resume/post.png"  alt="Around"/></a>
+            <p class="font-size-xx-laege text-light opacity-60 mb-3 pt-5 pl-5 pb-2 pb-sm-3">東吳大學 巨量資料管理學士學位學程＆科技管理學程</p>
+
           </div>
+      </div>
     </footer>
     <!-- Back to top button--><a class="btn-scroll-top" href="#top" data-scroll><span class="btn-scroll-top-tooltip text-muted font-size-sm mr-2">Top</span><i class="btn-scroll-top-icon fe-arrow-up">   </i></a>
     <!-- Vendor scrits: js libraries and plugins-->
